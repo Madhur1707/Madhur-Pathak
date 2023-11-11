@@ -8,7 +8,7 @@ $(document).ready(function () {
     }
     // Scroll down sticky navbar script end
 
-    // Scroll up Button script start
+    // Scroll up Button script start    
     if (this.scrollY > 500) {
       $(".scroll-up-btn").addClass("show");
     } else {

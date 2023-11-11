@@ -10,7 +10,7 @@
   background-color: #0c243c;
 }
 :root {
-  --main-text: #ffffff; 
+  --main-text: #ffffff;  
   --subtle-text: #b1560f; 
   --card-bg: #272727; 
   --card-text: #ffffff;
@@ -93,7 +93,7 @@ html {
   position: fixed;
   height: 50px;
   width: 47px;
-  background: #e4953c;
+  /* background: #e4953c; */
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -101,6 +101,7 @@ html {
   color: #fff;
   z-index: 999;
   font-size: 30px;
+border: 2px solid white;
   border-radius: 6px;
   cursor: pointer;
   opacity: 0;
@@ -187,7 +188,7 @@ html {
 
 /* all similar content styling code */
 section {
-  padding: 100px 0;
+  padding: 5px 0;
 }
 .about,
 .skills,
@@ -324,7 +325,7 @@ section .title::after {
 .button1 .icon i {
   font-size: 18px;
   line-height: 45px;
-  color: #b1560f;
+  color: #e5a01d;
   transition: all 0.3s ease-in-out;
 }
 .button1:hover {
@@ -342,15 +343,15 @@ section .title::after {
 }
 
 .button1:nth-child(1):hover .icon {
-  background: #e1306c;
+  background: #0c243c;
 }
 
 .button1:nth-child(2):hover .icon {
-  background: #4267b2;
+  background: #0c243c;
 }
 
 .button1:nth-child(3):hover .icon {
-  background: #1da1f2;
+  background: #0c243c
 }
 
 .button1:nth-child(4):hover .icon {
@@ -368,30 +369,30 @@ section .title::after {
   background: #1da1f2;
 }
 .button1:nth-child(1) span a {
-  color: #e1306c;
+  color: #0c243c;
 }
 
 .button1:nth-child(2) span a {
-  color: #4267b2;
+  color: #0c243c;
 }
 
 .button1:nth-child(3) span a {
-  color: #1da1f2;
+  color: #0c243c;
 }
 
 .button1:nth-child(4) span a {
-  color: #1da1f2;
+  color: #0c243c;
 }
 
 .button1:nth-child(5) span a {
-  color: #1da1f2;
+  color: #0c243c;
 }
 
 .button1:nth-child(6) span a {
   color: #333;
 }
 .button1:nth-child(7) span a {
-  color: #1da1f2;
+  color: #0c243c;
 }
 
 /* skills section styling */
@@ -443,24 +444,27 @@ section .title::after {
   content: "check my work";
 }
 .projects .carousel .card {
-  background: #222;
+  background: var(--primary-accent);
   border-radius: 10px;
   padding: 25px 20px;
   text-align: center;
   transition: all 0.3s ease;
+ 
 }
 .projects .carousel .card:hover {
-  background: rgb(48, 48, 48);
+  background: var(--primary-accent);
 }
 .projects .carousel .card .box {
   display: flex;
   flex-direction: column;
+  height: 350px;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5)
 }
 .projects .carousel .card:hover .box {
-  transform: scale(1.02);
+  transform: scale(1.1);
 }
 
 .projects .carousel .card p {
@@ -471,13 +475,12 @@ section .title::after {
 .projects .carousel .card img {
   height: 250px;
   width: 280px;
+  border-radius: 20px;
   object-fit: fill;
-  border-radius: 10px;
-  border: 2px solid crimson;
   transition: all 0.3s ease;
 }
 .projects .carousel .card:hover img {
-  border-color: #fff;
+border: 1px solid #04e3ff;
 }
 .owl-dots {
   text-align: center;
@@ -503,7 +506,7 @@ section .title::after {
 
 /* contact section styling */
 .contact .title::after {
-  background: #111;
+  background: var(--primary-accent);
   content: "get in touch";
 }
 .contact .contact-content .column {
@@ -578,6 +581,7 @@ section .title::after {
 .contact .right form .field input,
 .contact .right form .textarea textarea {
   height: 100%;
+  color: white;
   width: 100%;
   border: 1px solid lightgrey;
   border-radius: 6px;
@@ -612,9 +616,8 @@ section .title::after {
 
 /* footer section styling */
 footer {
-  background: #fff;
   padding: 20px 23px;
-  color: #000;
+  color: #fff;
   text-align: center;
 }
 footer span a {
