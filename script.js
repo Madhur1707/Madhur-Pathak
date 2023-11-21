@@ -6,7 +6,7 @@ $(document).ready(function () {
     } else {
       $(".navbar").removeClass("sticky");
     }
-    // Scroll down sticky navbar script end
+
 
     // Scroll up Button script start    
     if (this.scrollY > 500) {
@@ -14,7 +14,7 @@ $(document).ready(function () {
     } else {
       $(".scroll-up-btn").removeClass("show");
     }
-    // Scroll up Button script end
+
 
     // Fade In & Fade Out Elements on Scroll script start
     $(".fadein").each(function (i) {
@@ -27,7 +27,6 @@ $(document).ready(function () {
       if (bottom_of_window < bottom_of_element) {
         $(this).removeClass("showme");
       }
-      // Fade In & Fade Out Elements on Scroll script end
     });
   });
   // Scroll up Button script start
