@@ -426,7 +426,6 @@ section .title::after {
   width: 45px;
   height: 45px;
   cursor: pointer;
-  background: #111;
   overflow: hidden;
   border-radius: 35px;
   transition: all 0.3s ease-in-out;
@@ -466,35 +465,15 @@ section .title::after {
 }
 
 .button1:nth-child(1):hover .icon {
-  background: #0c243c;
+  background: #fff;
 }
 
 .button1:nth-child(2):hover .icon {
-  background: #0c243c;
+  background: #fff;
 }
 
 .button1:nth-child(3):hover .icon {
-  background: #0c243c
-}
-
-.button1:nth-child(4):hover .icon {
-  background: #1da1f2;
-}
-
-.button1:nth-child(5):hover .icon {
-  background: #1da1f2;
-}
-
-.button1:nth-child(6):hover .icon {
-  background: #333;
-}
-
-.button1:nth-child(7):hover .icon {
-  background: #1da1f2;
-}
-
-.button1:nth-child(1) span a {
-  color: #0c243c;
+  background: #fff;
 }
 
 .button1:nth-child(2) span a {
