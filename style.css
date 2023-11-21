@@ -538,7 +538,7 @@ section .title::after {
 }
 
 .projects .carousel .card {
-  background: var(--primary-accent);
+  background: #000;
   border-radius: 10px;
   padding: 25px 20px;
   text-align: center;
@@ -547,7 +547,7 @@ section .title::after {
 }
 
 .projects .carousel .card:hover {
-  background: var(--primary-accent);
+  background: #000;
 }
 
 .projects .carousel .card .box {
@@ -904,6 +904,7 @@ footer span a:hover {
     width: 200px;
   }
 }
+
 
 @media (max-width: 380px) {
   .about .about-content .left img {
