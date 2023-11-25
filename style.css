@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
- background-color: #000;
+  background-color: #000;
 
 }
 
@@ -53,7 +53,6 @@ html {
   font-size: 30px;
   font-weight: 500;
   color: #fff;
-  font-family: "Pacifico";
   transition: all 0.3s ease;
 }
 
@@ -149,12 +148,15 @@ html {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .greeting {
-    top: 6rem;
-    font-size: 30px;
+    font-size: 12px;
     font-weight: 300;
-left: 1.5rem;
+    position: absolute;
+    top: 60%;
+    right: 2px;
+    color: #04e3ff;
+    transform: translate(0, -50%);
   }
 }
 
@@ -171,6 +173,7 @@ left: 1.5rem;
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
 }
+
 .home .max-width {
   margin: auto 0 auto 40px;
 }
@@ -189,6 +192,7 @@ left: 1.5rem;
   font-size: 40px;
   margin: 5px 0;
 }
+
 /*** responsive for home section ***/
 
 
@@ -196,6 +200,7 @@ left: 1.5rem;
   font-weight: 500;
   color: #e5a01d;
 }
+
 .home .home-content a {
   display: inline-block;
   background: #e5a01d;
@@ -328,6 +333,16 @@ section .title::after {
   letter-spacing: 1px;
 }
 
+@media (max-width: 370px) {
+  .about .about-content .right p {
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: normal;
+    font-family: sans-serif;
+    letter-spacing: 0.8px;
+  }
+}
+
 .about .about-content .right a {
   display: inline-block;
   background: crimson;
@@ -345,6 +360,7 @@ section .title::after {
   color: crimson;
   background: none;
 }
+
 /*********Read More Button In Skills Css ****/
 .bn54 {
   position: relative;
@@ -386,15 +402,19 @@ section .title::after {
   0% {
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
+
   25% {
     transform: rotate(3deg) translate3d(0, 0, 0);
   }
+
   50% {
     transform: rotate(-3deg) translate3d(0, 0, 0);
   }
+
   75% {
     transform: rotate(1deg) translate3d(0, 0, 0);
   }
+
   100% {
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
@@ -404,19 +424,24 @@ section .title::after {
   0% {
     transform: translate3d(0, 0, 0) translateZ(0);
   }
+
   25% {
     transform: translate3d(4px, 0, 0) translateZ(0);
   }
+
   50% {
     transform: translate3d(-3px, 0, 0) translateZ(0);
   }
+
   75% {
     transform: translate3d(2px, 0, 0) translateZ(0);
   }
+
   100% {
     transform: translate3d(0, 0, 0) translateZ(0);
   }
 }
+
 /*********Read More Button In Skills Css ****/
 
 /* Social media section styling */
@@ -516,11 +541,33 @@ section .title::after {
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 370px) {
+  .skills .skills-content .left .text {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+}
+
 .skills .skills-content .left p {
   text-align: justify;
   line-height: 1.6;
   letter-spacing: 1px;
 }
+
+@media only screen and (max-width: 370px) {
+  .skills .skills-content .left p {
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: normal;
+    font-family: sans-serif;
+    letter-spacing: 0.8px;
+  }
+}
+
+
 .skills .skills-content .right .info {
   display: flex;
   flex-wrap: wrap;
@@ -538,7 +585,7 @@ section .title::after {
 }
 
 .projects .carousel .card {
-  background: var(--primary-accent);
+  /* background: var(--primary-accent); */
   border-radius: 10px;
   padding: 25px 20px;
   text-align: center;
@@ -546,9 +593,9 @@ section .title::after {
 
 }
 
-.projects .carousel .card:hover {
-  background: var(--primary-accent);
-}
+/* .projects .carousel .card:hover {
+  /* background: var(--primary-accent */
+/* } */
 
 .projects .carousel .card .box {
   display: flex;
@@ -905,9 +952,11 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 370px) {
   .about .about-content .left img {
     height: 250px;
     width: 250px;
+    display: block;
+    margin: 0 auto;
   }
 }

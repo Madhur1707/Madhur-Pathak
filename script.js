@@ -82,17 +82,17 @@ $(document).ready(function () {
 });
 
 //  Greeting Messages for Home Page------>
-function displayGreeting () {
-  const now = new Date ();
+function displayGreeting() {
+  const now = new Date();
   const hour = now.getHours();
   let greeting;
-  if(hour >= 5 && hour < 12){
+  if (hour >= 5 && hour < 12) {
     greeting = 'Good Morning';
-  }else if (hour >= 12 && hour <17){
+  } else if (hour >= 12 && hour < 17) {
     greeting = 'Good Afternoon';
-  }else if (hour >= 17 && hour <20 ){
+  } else if (hour >= 17 && hour < 20) {
     greeting = 'Good Evening';
-  }else {
+  } else {
     greeting = 'Good Night';
   }
   const greetingElement = document.getElementById('greeting');
